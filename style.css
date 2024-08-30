@@ -1,0 +1,261 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a4edf1;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.search input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    flex-grow: 1; /* Make search input expand */
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('Assest/cyber.jpg'); /* Add your background image path here */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero-images {
+    display: none; /* Hide images for simplicity */
+}
+
+/* Courses Section */
+.courses-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.courses-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.courses {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    width: 22%;
+}
+
+.course img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.course h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.course p {
+    margin: 10px 0;
+}
+
+.course .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    width: 87%;
+}
+
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/*Today's code*/
+.rem{
+    text-decoration: none;
+}
+
+.courses .course {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.courses h.course:over {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f5f5f5;
+}
+
+/*Second section*/
+/* Professional Skills Learning Collection Section */
+.professional-skills-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.professional-skills-section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.skills-collection {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+}
+
+.skill-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.skill-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.skill-item p strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.skill-item .btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 250px;
+    transition: background-color 0.3s ease;
+}
+
+.skill-item .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .courses {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course {
+        width: 90%; /* Full width for smaller screens */
+    }
+
+    .skills-collection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-item {
+        width: 90%; /* Full width for smaller screens */
+    }
+
+    .hero-text h1 {
+        font-size: 28px; /* Smaller font size for smaller screens */
+    }
+}
